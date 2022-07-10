@@ -3,20 +3,29 @@
     src: url(./Roboto/Roboto/Roboto-Black.ttf) format("truetype");
     font-weight: normal;
 }
-
 .header {
     background-color: #1f2937;
     color: #ffffff;
     padding: 140px;
 }
-
-.menu {
-    width: 25%;
-    float: right;
-    margin-bottom: 100px;
-    color: white;
+.header2 {
+    text-align: center;
 }
-
+menu, ul {
+    display: flex;
+    padding: 0;
+    width: 400px;
+    float: right;
+  }
+  
+  li {
+    flex-grow: 1;
+  }
+  
+  button {
+    width: 100%;
+  }
+  
 * { 
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box; 
@@ -24,10 +33,23 @@
 * {
     border-style: 20px solid white;
 }
+
+
+.flex-container {
+    display: flex;
+    align-content: space-around(0,5,0);
+    image-rendering:auto;
+}
+
 .box {
+    width: 350px;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0, 1);
     image-orientation: from-image;
     image-rendering: optimizeQuality;
-    border-image-width: 10px;
+    image-resolution: from-image;
 }
 
 .box1 { 
@@ -49,12 +71,6 @@
     nav-right: auto;
 }
 
-.flex-container {
-    align-content: space-around(0,5,0);
-    image-rendering:auto;
-    display: flex;
-}
-
 ::-webkit-textfield-decoration-container
 
 * {
@@ -65,12 +81,9 @@
 h5 {
     font-family: sans-serif;
     font-size: 20px;
-    color:blue;
-    background-color: gray;
 }
 h3 {
     font-family: monospace, sans-serif;
-    color: blueviolet;
 }
 .footer {
     background-color: #1f2937;
